@@ -1,0 +1,37 @@
+appId: com.biocalc.app
+productName: BioCalc 11
+copyright: Copyright © 2026 BioCalc Studio
+
+directories:
+  output: release
+  buildResources: build
+
+files:
+  - dist/**/*
+  - dist-electron/**/*
+  - package.json
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+        - arm64
+  icon: build/icon.ico
+  requestedExecutionLevel: asInvoker
+  fileAssociations:
+    - ext: xlsx
+      name: Excel Workbook
+      description: Open with BioCalc 11
+      mimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+    - ext: csv
+      name: CSV Document
+      description: Open with BioCalc 11
+      mimeType: text/csv
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: BioCalc 11

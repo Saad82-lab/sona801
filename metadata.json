@@ -1,0 +1,6 @@
+{
+  "name": "BioCalc 11 - Windows 11 Desktop Spreadsheet & BioScience Suite",
+  "description": "Production-grade Windows 11 Fluent Desktop Spreadsheet Suite with full XLSX/CSV engine, virtualized grid, scientific computing, and molecular analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
